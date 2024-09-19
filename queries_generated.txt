@@ -1,0 +1,111 @@
+1. what are is the average price of all the products?
+
+query generated : 
+
+db.Products.aggregate([{ "$group": { "_id": None, "averagePrice": { "$avg": "$Price" }}}])
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. List all the product names in order of price
+
+Query generated:
+
+db.Products.aggregate([
+{
+"$sort": {
+"Price": 1
+}
+},
+{
+"$project": {
+"_id": 0,
+"ProductName": 1
+}
+}
+])
+
+
+
+---------------------------------------------------------------------------------------------------------------------------
+3. What are the products with a price greater than $50?
+
+Query generated:
+
+db.Products.find({"Price": {"$gt": 50}})
+
+
+----------------------------------------------------------------------------------------------------------------------------
+4. Find all products with a rating below 4.5 that have more than 200 reviews and are offered by the brand 'Nike' or 
+'Sony'.
+
+Query generated:
+
+db.Products.find({
+"Rating": {
+ "$lt": 4.5
+},
+"ReviewCount": {
+ "$gt": 200
+},
+"Brand": {
+ "$in": ["Nike", "Sony"]
+}
+})
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+5. List the products that are in stock
+
+Query generated:
+
+db.Products.find({"Stock": {"$gt": 0}})
+
+
+------------------------------------------------------------------------------------------------------------------------------
+6. Which products in the Electronics category have a rating of 4.5 or higher and are in stock?
+
+Query generated:
+
+db.Products.find({"Category": "Electronics", "Rating": {"$gte": 4.5}, "Stock": {"$gt": 0}})
+
+------------------------------------------------------------------------------------------------------------------------
+7. what are the unique ProductID?
+
+Query generated:
+
+db.Products.distinct("ProductID")
+-------------------------------------------------------------------------------------------------------------------------
+8. List the products that have a discount?
+
+query generated:
+
+db.Products.find({"Discount": {"$gt": 0}})
+
+--------------------------------------------------------------------------------------------------------------------------
+8. List the products that have a rating greater than 5?
+
+query generated:
+
+db.Products.find({"Rating": {"$gt": 5}})
+
+--------------------------------------------------------------------------------------------------------------------------
+9. List all the products launched after January,1,2022
+
+query generated:
+
+db.Products.find({"LaunchDate": {"$gt": datetime(2022, 1, 1)}})
+
+---------------------------------------------------------------------------------------------------------------------------
+10. List products launched after January 1, 2022, in the Home & Kitchen or Sports categories with a discount of 10% or more, sorted by price in descending order.
+
+query generated:
+
+db.Products.find({
+"$and": [
+{"LaunchDate": {"$gt": datetime(2022, 1, 1)}},
+{"$or": [{"Category": "Home & Kitchen"}, {"Category": "Sports"}]},
+{"Discount": {"$gte": 10}}
+]
+}).sort("Price", -1)
