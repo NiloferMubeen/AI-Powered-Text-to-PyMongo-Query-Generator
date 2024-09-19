@@ -49,7 +49,7 @@ Before running the application, configure your MongoDB connection and AI model s
 
 **MongoDB Connection**
 
-MONGO_URI = 'mongodb://localhost:27017/'
+`mongo_url = 'mongodb://localhost:27017/'`
 
 **AI model**
 
