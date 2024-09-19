@@ -85,7 +85,7 @@ messages = [
 
                             db.Products.find(query)';
                                
-         \n Example 5 : Invalid field is asked , the output should be "Invalid field"                
+                         
      Generate only the command without any explanantion or quotes,
      Generate command only for the question given""",
     ),
