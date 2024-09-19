@@ -29,15 +29,42 @@ AI-Powered Text-to-PyMongo Query Generator is an application that transforms nat
   
 ### 2. Clone the Repository
 
-```bash
-git clone https://github.com/NiloferMubeen/AI-Powered-Text-to-PyMongo-Query-Generator.git
-cd AI-Powered-Text-to-PyMongo-Query-Generator
+`git clone https://github.com/NiloferMubeen/AI-Powered-Text-to-PyMongo-Query-Generator.git
+cd AI-Powered-Text-to-PyMongo-Query-Generator`
 
 
 ### 3.Set Up a Virtual Environment
 
 It's recommended to use a virtual environment to manage your project's dependencies.
 
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+`python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate``
+
+### 4. Install Dependencies
+
+`pip install -r requirements.txt`
+
+### 5. Configuration
+Before running the application, configure your MongoDB connection and AI model settings.
+
+**MongoDB Connection**
+
+MONGO_URI = 'mongodb://localhost:27017/'
+
+**AI model**
+
+To use the groq_api_key in your Python project, follow these steps:
+
+* Obtain Your API Key:
+1.Visit the Groq API website and sign up or log in to your account.
+2.Navigate to the API section and generate a new API key.
+3. Copy the API key to a secure location.
+
+Ensure that the AI model files and necessary configurations are correctly set up.
+
+## Usage
+
+To start the application, run the following command in your command prompt:
+```python
+streamlit run app.py
+
