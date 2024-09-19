@@ -32,3 +32,12 @@ AI-Powered Text-to-PyMongo Query Generator is an application that transforms nat
 ```bash
 git clone https://github.com/NiloferMubeen/AI-Powered-Text-to-PyMongo-Query-Generator.git
 cd AI-Powered-Text-to-PyMongo-Query-Generator
+
+
+### 3.Set Up a Virtual Environment
+
+It's recommended to use a virtual environment to manage your project's dependencies.
+
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
