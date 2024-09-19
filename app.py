@@ -116,4 +116,6 @@ if save:
     df1 = pd.DataFrame(documents)
     df1.to_csv('my_file.csv',index=False)
     st.success("File saved")
+
+my_client.close() #closing the mongo db connection
         
