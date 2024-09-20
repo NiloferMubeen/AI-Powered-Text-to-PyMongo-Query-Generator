@@ -65,12 +65,10 @@ Ensure that the AI model files and necessary configurations are correctly set up
 ## Usage
 
 To start the application, run the following command in your command prompt:
-```python
-streamlit run app.py
 
+`streamlit run app.py`
 
-
-[Demo](https://github.com/user-attachments/assets/9060d278-bb00-41b6-a30c-0930702eed91)
+[Link for Demo video](https://github.com/user-attachments/assets/9060d278-bb00-41b6-a30c-0930702eed91)
 
 
 
