@@ -68,6 +68,8 @@ To start the application, run the following command in your command prompt:
 
 `streamlit run app.py`
 
+## Demo Video:
+
 [Link for Demo video](https://github.com/user-attachments/assets/9060d278-bb00-41b6-a30c-0930702eed91)
 
 
