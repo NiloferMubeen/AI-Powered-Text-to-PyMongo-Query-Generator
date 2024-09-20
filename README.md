@@ -68,7 +68,11 @@ To start the application, run the following command in your command prompt:
 ```python
 streamlit run app.py
 
-[![Watch the video](https://raw.githubusercontent.com/NiloferMubeen/AI-Powered-Text-to-PyMongo-Query-Generator/main/assets/Query-PyMongo.jpg)](https://raw.githubusercontent.com/NiloferMubeen/AI-Powered-Text-to-PyMongo-Query-Generator/main/assets/streamlit-app-2024-09-19-20-09-32.mp4))
+
+
+[Demo](https://github.com/user-attachments/assets/9060d278-bb00-41b6-a30c-0930702eed91)
+
+
 
 
 
