@@ -70,7 +70,8 @@ To start the application, run the following command in your command prompt:
 
 ## Demo Video:
 
-[Link for Demo video](https://github.com/user-attachments/assets/9060d278-bb00-41b6-a30c-0930702eed91)
+https://github.com/user-attachments/assets/d79c62a1-cb91-41fe-9121-438e21e2b3b0
+
 
 
 
