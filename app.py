@@ -68,7 +68,7 @@ with c3:
 
 # 3.--------------------------------------------------  Dynamic Query Generation using LLM ---------------------------------#
 load_dotenv()
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")  # setting API key as environment variable
+os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")  # Retrieves the value of the environment variable GROQ_API_KEY
 
 # Instantiating the model 
 llm = ChatGroq(  
